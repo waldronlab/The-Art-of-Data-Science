@@ -1,4 +1,4 @@
-# the_art_of_data_science
+# The Art of Data Science
 
 Matsui, E. & Peng, R. D. *The Art of Data Science*. (Leanpub, 2015).
 
