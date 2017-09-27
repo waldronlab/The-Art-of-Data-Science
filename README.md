@@ -10,9 +10,9 @@ This repository represent the joint effort of [Paris Lodron University of Salzbu
 
 1. Obtain a free copy of the book by visiting https://leanpub.com/artofdatascience and signing up for an account.
 
-2. Sign up for a GitHub account (also free) and clone this repository. Don't know what that means? Follow this [tutorial](https://try.github.io/levels/1/challenges/1).
+2. If you don't already have them, install R and RStudio following these [instructions](https://www.ics.uci.edu/~jutts/110/InstallingRandRStudio.pdf).
 
-3. If you don't already have them, install R and RStudio following these [instructions](https://www.ics.uci.edu/~jutts/110/InstallingRandRStudio.pdf).
+3. Sign up for a GitHub account (also free) and clone this repository in RStudio. Don't know what that means? Follow this [tutorial](https://try.github.io/levels/1/challenges/1). The process in RStudio is documented [here](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN) or there is a video [here](https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-part-2/).
 
 4. Join our Google Group (open membership) to recieve emails by visiting ...
 
@@ -25,20 +25,6 @@ This repository represent the joint effort of [Paris Lodron University of Salzbu
 When: Wednesday's from 11:15-12:15 (NYC) / 17:15-18:15 (Salzburg)
 
 Where: ... (Google Hangouts)
-
-## Presenting
-
-1. Pick the date or topic that best suits you.
-
-2. Edit this file, adding you GitHub username to the schedule table.
-
-3. Read the chapter in the book.
-
-4. Edit the presentation file using RStudio. All presentations should be authored using the `.Rpres` format, more infomation about the format is available [here](https://support.rstudio.com/hc/en-us/articles/200486468). Additionally, some previous presentation that can be used as examples are available [here](https://github.com/waldronlab/Book_Club/tree/master/Data%20Analysis%20for%20the%20Life%20Sciences).
-
-5. Commit the presentation to GitHub from RStudio so that it is available to others. Don't know what that means? The process is documented [here](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN) or there is a video [here](https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-part-2/).
-
-6. Present your hard work at the weekly meeting!
 
 ## Schedule
 
@@ -55,3 +41,17 @@ Where: ... (Google Hangouts)
 | 2017-12-13 | Interpreting Your Results |  |
 | 2017-12-20 | Communication |  |
 | 2017-12-20 | Concluding Thoughts |  |
+
+## Presenting
+
+1. Pick the date or topic that best suits you.
+
+2. Edit this file, adding you GitHub username to the schedule table.
+
+3. Read the chapter in the book.
+
+4. Edit the presentation file using RStudio. All presentations should be authored using the `.Rpres` format, more infomation about the format is available [here](https://support.rstudio.com/hc/en-us/articles/200486468). Additionally, some previous presentation that can be used as examples are available [here](https://github.com/waldronlab/Book_Club/tree/master/Data%20Analysis%20for%20the%20Life%20Sciences).
+
+5. Commit the presentation to GitHub from RStudio so that it is available to others. Don't know what that means? The process is documented [here](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN) or there is a video [here](https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-part-2/).
+
+6. Present your hard work at the weekly meeting!
