@@ -14,9 +14,9 @@ This repository represent the joint effort of [Paris Lodron University of Salzbu
 
 3. Sign up for a GitHub account (also free) and clone this repository in RStudio. Don't know what that means? Follow this [tutorial](https://try.github.io/levels/1/challenges/1). The process in RStudio is documented [here](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN) or there is a video [here](https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-part-2/).
 
-4. Join our Google Group (open membership) to recieve emails by visiting ...
+4. Join our Google Group (open membership) and sign up to recieve emails by visiting https://groups.google.com/d/forum/artofdatascience.
 
-5. Join our Google Calendar (open membership) to recieve meeting reminders by visiting ...
+5. Join our Google Calendar (open membership) to recieve meeting reminders by subscribing to the calendar's email address (7ifs2lepvij1411pkl30dphel4@group.calendar.google.com).
 
 6. Participate in weekly meetings, the details of which are below.
 
@@ -24,7 +24,7 @@ This repository represent the joint effort of [Paris Lodron University of Salzbu
 
 When: Wednesday's from 11:15-12:15 (NYC) / 17:15-18:15 (Salzburg)
 
-Where: ... (Google Hangouts)
+Where: TBD
 
 ## Schedule
 
