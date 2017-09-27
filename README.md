@@ -1,6 +1,6 @@
 # The Art of Data Science
 
-This repository represent the joint effort of Paris Lodron University of Salzburg and the City University of New York Graduate School of Public Health and Health Policy in creating an interactive online reading of Matsui and Peng's *The Art of Data Science*. In each of our weekly meetings, a chapter of the book is presented by a developing instructor with a focus on using the R language. Our meetings are open to all (see details below) and our materials licensed under the Creative Commons Attribution-ShareAlike 4.0 International Public License. We hope you find these materials useful and will join our sessions.
+This repository represent the joint effort of [Paris Lodron University of Salzburg](https://www.uni-salzburg.at/index.php?id=52) and the [City University of New York Graduate School of Public Health and Health Policy](http://sph.cuny.edu/) in creating an interactive online reading of Matsui and Peng's *The Art of Data Science*. In each of our weekly meetings, a chapter of the book is presented by a developing instructor with a focus on using the R language. Our meetings are open to all (see details below) and our materials are licensed under the Creative Commons Attribution-ShareAlike 4.0 International Public License. We hope you find these materials useful and will join our sessions.
 
 ## The Book
 
