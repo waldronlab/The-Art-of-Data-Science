@@ -12,7 +12,7 @@ This repository represent the joint effort of [Paris Lodron University of Salzbu
 
 2. If you don't already have them, install R and RStudio following these [instructions](https://www.ics.uci.edu/~jutts/110/InstallingRandRStudio.pdf).
 
-3. Sign up for a GitHub account (also free) and clone this repository in RStudio. Don't know what that means? Follow this [tutorial](https://try.github.io/levels/1/challenges/1). The process in RStudio is documented [here](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN) or there is a video [here](https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-part-2/).
+3. Sign up for a GitHub account (also free) and clone this repository (open membership) in RStudio. Don't know what that means? Follow this [tutorial](https://try.github.io/levels/1/challenges/1). The process in RStudio is documented [here](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN) or there is a video [here](https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-part-2/).
 
 4. Join our Google Group (open membership) and sign up to recieve emails by visiting https://groups.google.com/d/forum/artofdatascience.
 
@@ -24,7 +24,7 @@ This repository represent the joint effort of [Paris Lodron University of Salzbu
 
 When: Wednesday's from 11:15-12:15 (NYC) / 17:15-18:15 (Salzburg)
 
-Where: TBD
+Where: http://huntercollege.adobeconnect.com/artofdatascience/
 
 ## Schedule
 
@@ -55,3 +55,7 @@ Where: TBD
 5. Commit the presentation to GitHub from RStudio so that it is available to others. Don't know what that means? The process is documented [here](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN) or there is a video [here](https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-part-2/).
 
 6. Present your hard work at the weekly meeting!
+
+## Getting Help
+
+If you still need help after you have exausted all the resources available here, you should email the Google Group (artofdatascience@googlegroups.com).
