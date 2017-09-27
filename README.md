@@ -58,4 +58,4 @@ Where: http://huntercollege.adobeconnect.com/artofdatascience/
 
 ## Getting Help
 
-If you still need help after you have exausted all the resources available here, you should email the Google Group (artofdatascience@googlegroups.com).
+Still need help? Email the Google Group (artofdatascience@googlegroups.com).
