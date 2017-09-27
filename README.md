@@ -4,7 +4,11 @@ This repository represent the joint effort of [Paris Lodron University of Salzbu
 
 ## The Book
 
+> ![](https://s3.amazonaws.com/titlepages.leanpub.com/artofdatascience/hero?1484318026)
+
 > Matsui, E. & Peng, R. D. *The Art of Data Science*. (Leanpub, 2015).
+
+This book describes the process of analyzing data. The authors have extensive experience both managing data analysts and conducting their own data analyses, and this book is a distillation of their experience in a format that is applicable to both practitioners and managers in data science.
 
 ## Getting Started
 
