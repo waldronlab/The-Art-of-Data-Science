@@ -37,7 +37,7 @@ Where: http://huntercollege.adobeconnect.com/artofdatascience/
 | 2017-10-04 | Data Analysis as Art |	schifferl |
 | 2017-10-11 | Epicycles of Analysis |  |
 | 2017-10-18 | Stating and Refining the Question |  |
-| 2017-10-25 | Exploratory Data Analysis |  |
+| 2017-10-25 | Exploratory Data Analysis |philippgrafendorfe |
 | 2017-11-08 | Using Models to Explore Your Data |  |
 | 2017-11-15 | Inference: A Primer |  |
 | 2017-11-29 | Formal Modeling |  |
