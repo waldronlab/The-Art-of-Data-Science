@@ -41,7 +41,7 @@ Where: http://huntercollege.adobeconnect.com/artofdatascience/
 | 2017-11-08 | Using Models to Explore Your Data |  |
 | 2017-11-15 | Inference: A Primer |  |
 | 2017-11-29 | Formal Modeling |  |
-| 2017-12-06 | Inference vs. Prediction: Implications for Modeling Strategy |  |
+| 2017-12-06 | Inference vs. Prediction: Implications for Modeling Strategy | raph333 |
 | 2017-12-13 | Interpreting Your Results |  |
 | 2017-12-20 | Communication |  |
 | 2017-12-20 | Concluding Thoughts |  |
