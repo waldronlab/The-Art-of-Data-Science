@@ -6,25 +6,61 @@ autosize: true
 
 Matsui, E. & Peng, R. D. *The Art of Data Science*. (Leanpub, 2015).
 
-First Slide
+Topic overview
 ========================================================
+incremental: true
 
-For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+- General introduction
+- Song writing / data analysis
+- Donald Knuth
+- Creativity
+- Reproducibility
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-Slide With Code
+General introduction
 ========================================================
+incremental: true
 
-```{r}
-summary(cars)
-```
+- Welcome all
+- About me
+- About you
+- About us
+- I forget
 
-Slide With Plot
+Song writing / data analysis
 ========================================================
+incremental: true
 
-```{r, echo=FALSE}
-plot(cars)
-```
+- How do you write a song?
+- Can computers write songs?
+- How do you do you conduct data analysis?
+- Can machines really learn?
+
+Donald Knuth
+========================================================
+incremental: true
+
+- [Computer Programing as Art, 1974](http://www.paulgraham.com/knuth.html)
+
+> The chief goal of my work as educator and author is to help people learn how to write beautiful programs.
+
+- There is art and creativity in software and statistics
+- Literate programming
+
+
+Creativity
+========================================================
+incremental: true
+
+- Data analysis has an element of creativity
+- Right-brained creativity
+- It is the decisions that we make
+- Analyst intuition
+
+Reproducibility
+========================================================
+incremental: true
+
+- Scientific method remains important
+- Analyst are like pilots
+- Will you be able to reproduce your work in a year?
+- Use of generalizable methods helps
