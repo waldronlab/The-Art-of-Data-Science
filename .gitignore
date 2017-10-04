@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+!README.md
+*.md
+rsconnect
+*.html
