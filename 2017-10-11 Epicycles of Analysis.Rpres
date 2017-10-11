@@ -11,13 +11,17 @@ Topic overview
 incremental: true
 
 - General introduction
+- 5 core activities of data analysis
+- Epicycles within each core activity
+- ATM example
+- Practical example
 
 General introduction
 ========================================================
 incremental: true
 
 <center>
-<img style="height: 20em" src="https://4cawmi2va33i3w6dek1d7y1m-wpengine.netdna-ssl.com/wp-content/uploads/2017/02/2_1_Full_Intro-to-Data-Science.jpg">
+<img style="height: 15em" src="https://4cawmi2va33i3w6dek1d7y1m-wpengine.netdna-ssl.com/wp-content/uploads/2017/02/2_1_Full_Intro-to-Data-Science.jpg">
 <br>
 <a href="https://4cawmi2va33i3w6dek1d7y1m-wpengine.netdna-ssl.com/wp-content/uploads/2017/02/2_1_Full_Intro-to-Data-Science.jpg" target="_blank">image source</a>
 </center>
@@ -44,12 +48,12 @@ ATM example
 ========================================================
 
 <center>
-<img style="height: 20em" src="https://c1.staticflickr.com/7/6120/6233821768_18d97beb99_b.jpg">
+<img style="height: 15em" src="https://c1.staticflickr.com/7/6120/6233821768_18d97beb99_b.jpg">
 <br>
 <a href="https://c1.staticflickr.com/7/6120/6233821768_18d97beb99_b.jpg" target="_blank">image source</a>
 </center>
 
-A real example
+Practical example
 ========================================================
 incremental: true
 
