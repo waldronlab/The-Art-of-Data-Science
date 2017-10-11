@@ -1,30 +1,79 @@
 Epicycles of Analysis
 ========================================================
-author:
+author: schifferl
 date: 2017-10-11
 autosize: true
 
 Matsui, E. & Peng, R. D. *The Art of Data Science*. (Leanpub, 2015).
 
-First Slide
+Topic overview
+========================================================
+incremental: true
+
+- General introduction
+
+General introduction
+========================================================
+incremental: true
+
+<center>
+<img style="height: 20em" src="https://4cawmi2va33i3w6dek1d7y1m-wpengine.netdna-ssl.com/wp-content/uploads/2017/02/2_1_Full_Intro-to-Data-Science.jpg">
+<br>
+<a href="https://4cawmi2va33i3w6dek1d7y1m-wpengine.netdna-ssl.com/wp-content/uploads/2017/02/2_1_Full_Intro-to-Data-Science.jpg" target="_blank">image source</a>
+</center>
+
+5 core activities of data analysis
+========================================================
+incremental: true
+
+1. Stating and refining the question
+2. Exploring the data
+3. Building formal statistical models
+4. Interpreting the results
+5. Communicating the results
+
+Epicycles within each core activity
+========================================================
+incremental: true
+
+1. Set expectations
+2. Test expectations
+3. Revise expectations
+
+ATM example
 ========================================================
 
-For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+<center>
+<img style="height: 20em" src="https://c1.staticflickr.com/7/6120/6233821768_18d97beb99_b.jpg">
+<br>
+<a href="https://c1.staticflickr.com/7/6120/6233821768_18d97beb99_b.jpg" target="_blank">image source</a>
+</center>
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-Slide With Code
+A real example
 ========================================================
+incremental: true
 
-```{r}
-summary(cars)
-```
+1. Stating and refining the question
 
-Slide With Plot
-========================================================
+    How has educational attainment changed in the united states since 1950?
 
-```{r, echo=FALSE}
-plot(cars)
-```
+2. Exploring the data
+
+    Check that recent population estimates are ~ 330M!
+
+3. Building formal statistical models
+
+    Make a plot of education over time / make a statistical models!
+
+4. Interpreting the results
+
+    State the rate of increase or decrease explicitly...
+
+5. Communicating the results
+
+    Present results in a way that people can understand...
+
+---
+
+https://rpubs.com/schifferl/lsbeda
+
