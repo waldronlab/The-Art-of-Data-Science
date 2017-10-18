@@ -5,7 +5,7 @@ date: October 16th 2017
 autosize: true
 
 Types of Questions
-========================================================
+=======================================================
 - Descriptive
 - Exploratory
 - Inferential
@@ -23,8 +23,10 @@ Types of Questions
 
 Refinement of the question
 =========================================================
-The question will be constantly refined through the Epicycles of Analysis.
-(see previous presentation)
+The question will be constantly refined through the Epicycles of Analysis
+(see previous presentation).
+
+![alt text](epicycles.png)
 
 
 Characteristics of a good question
