@@ -12,7 +12,7 @@ This book describes the process of analyzing data. The authors have extensive ex
 
 ## Getting Started
 
-1. Obtain a free copy of the book by visiting https://leanpub.com/artofdatascience and signing up for an account.
+1. Obtain a free copy of the book by visiting https://leanpub.com/artofdatascience and signing up for an account, or view directly at https://bookdown.org/rdpeng/artofdatascience/.
 
 2. If you don't already have them, install R and RStudio following these [instructions](https://www.ics.uci.edu/~jutts/110/InstallingRandRStudio.pdf).
 
