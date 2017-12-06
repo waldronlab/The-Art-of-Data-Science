@@ -1,30 +1,60 @@
 Stating and Refining the Question
 ========================================================
-author:
-date: 2017-10-18
+author: Raphael Peer
+date: October 16th 2017
 autosize: true
 
-Matsui, E. & Peng, R. D. *The Art of Data Science*. (Leanpub, 2015).
+Types of Questions
+=======================================================
+- Descriptive
+- Exploratory
+- Inferential
+- Predictive
+- Causal
+- Mechanistic
 
-First Slide
-========================================================
 
-For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+Types of Questions
+=========================================================
+| Descriptive / Exploratory              | Inferential / Predictive                    | Causal / Mechanistic         |
+|---------------------------------------:|:--------------------------------------------|------------------------------|
+| only questions about  the data at hand | questions about things outside your dataset | questions beyond correlation |
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
 
-Slide With Code
-========================================================
+Refinement of the question
+=========================================================
+The question will be constantly refined through the Epicycles of Analysis
+(see previous presentation).
 
-```{r}
-summary(cars)
-```
+![alt text](epicycles.png)
 
-Slide With Plot
-========================================================
 
-```{r, echo=FALSE}
-plot(cars)
-```
+Characteristics of a good question
+=========================================================
+- interesting
+- novel (not already answered)
+- plausible
+- answerable
+- specific (...makes the question answerable)
+
+
+Trade-offs when defining a good question
+=========================================================
+- novel vs. answerable
+- interesting vs. specific
+- plausible vs. novel
+- ...
+
+
+Translating a Question into a Data Problem
+=========================================================
+- Does the data measure what I think it measures?
+- Does the data allow to correct for confounding variables?
+- In which way is the data biased?
+
+Case study and discussion
+=========================================================
+
+Thank you very much for your attention!
+=========================================================
+
