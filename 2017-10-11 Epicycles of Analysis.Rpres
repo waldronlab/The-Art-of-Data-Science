@@ -1,30 +1,64 @@
 Epicycles of Analysis
 ========================================================
-author:
+author: Nico Buettner
 date: 2017-10-11
 autosize: true
 
 Matsui, E. & Peng, R. D. *The Art of Data Science*. (Leanpub, 2015).
 
-First Slide
+Data analysis as a circular process
 ========================================================
+incremental: true
 
-For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+- highly iterative
+- non-linear
+- information is learned at each step
+- refine, redo, proceed to the next step
+- What's differentiates data analysis from a study?
+- no formal development or execution of a plan to collect data
+- not formally deriving a hypothesis
+- Asumption: data already exists
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-Slide With Code
+Visual representation
 ========================================================
+incremental: true
 
-```{r}
-summary(cars)
-```
+![alt text](images/big_picture_eda.gif)
 
-Slide With Plot
+***
+1. Setting Expectations
+2. Collecting information (data), comparing the data to your expectations, and if the expectations don’t match
+3. Revising your expectations or fixing the data so your data and your expectations match
+4. Go through 1 to 3 iteratively at each of the following epicycles
+
+Epicycles
 ========================================================
+incremental: true
 
-```{r, echo=FALSE}
-plot(cars)
-```
+![alt text](images/epicycles.png)
+
+***
+1. Stating and refining the question
+2. Exploring the data
+3. Building formal statistical models
+4. Interpreting the results
+5. Communicating the results
+
+Tabular representation
+========================================================
+incremental: true
+
+![alt text](table.jpg)
+
+Example: Asthma prevalence in the U.S.
+========================================================
+incremental: true
+
+- Is there already an answer to your question? --> refine
+- How many people in the United States have asthma that is not currently controlled, and what are the demographic predictors of uncontrolled asthma?
+- United States adult population, 18 years and older
+- Does the number of rows in the data match the description in the codebook?
+- Are your expectations about the age variable in line with your data?
+- Model the data
+- Interpret the results: age, African American/black race, body mass index, smoking status, low income, gender
+- Communicate the findings: feedback, questions

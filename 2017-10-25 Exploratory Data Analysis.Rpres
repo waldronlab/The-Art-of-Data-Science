@@ -1,30 +1,235 @@
+<style>
+body {
+    overflow: scroll;
+}
+.small-code pre code {
+  font-size: 1em;
+}
+</style>
+
+
 Exploratory Data Analysis
 ========================================================
-author:
+author: Philipp Grafendorfer
 date: 2017-10-25
-autosize: true
+
 
 Matsui, E. & Peng, R. D. *The Art of Data Science*. (Leanpub, 2015).
 
-First Slide
+Exploratory Data Analysis
 ========================================================
+class: small-code
+"It is kind of funny that we often find something special if we are not looking for anything specific."
 
-For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+<img src="big_picture_eda.gif" style="background-color:transparent; border:0px; box-shadow:none;</img>
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-Slide With Code
+Know your questions
 ========================================================
+class: small-code
+- Do counties in the eastern United States have higher ozone levels than counties in the western United States?
+- Does the Ozone level of the Los Angeles basin exceed the mean Ozone level of the rest of California?
+
+Data Import
+========================================================
+class: small-code
+US Ozone Data from 2016.
+
+Use `data.table::fread()` for import. Its fast and convenient as you don't have to specify anything. It just works.
+```{r, message=FALSE, warning=FALSE}
+library(data.table)
+ozone <- fread(input = "data/hourly_44201_2016.csv", data.table = F)
+```
+
+Head and Tail
+========================================================
+class: small-code
+This lets you know if the data were read in properly, things are properly
+formatted, and that everything is there. If your data are time
+series data, then make sure the dates at the beginning and
+end of the dataset match what you expect the beginning and
+ending time period to be.
 
 ```{r}
-summary(cars)
+head(ozone[, c(6:7,10)])
 ```
 
-Slide With Plot
+```{r}
+tail(ozone[, c(6:7,10)])
+```
+
+
+Basic data refactoring and inspection
+========================================================
+class: small-code
+Remove whitespace in feature names and inspect the structure of the dataframe.
+
+Give `gsub` a chance.
+```{r}
+library(purrr)
+names(ozone) <- map_chr(names(ozone), ~ gsub(" ", ".", ., fixed = TRUE))
+str(ozone)
+```
+
+Check if there are any NAs
+```{r}
+sapply(ozone, function(x) any(is.na(x)))
+```
+
+ABC: Always be Checking your "n"s
+========================================================
+class: small-code
+Are the timestamps consistent?
+```{r}
+timestamp_freq <- table(ozone$Time.Local)
+(timestamp_freq <- as.data.frame(timestamp_freq))
+print(paste0("The statement 'every measurement was done hourly on the same time' is ", sum(timestamp_freq$Freq) == dim(ozone)[1]))
+```
+
+
+Zero Variance Features
+========================================================
+class: small-code
+Features with zero variance have zero explanatory power for any dependent variable. Drop them.
+```{r}
+table(ozone$Uncertainty)
+ozone$Uncertainty <- NULL
+```
+
+```{r}
+table(ozone$Units.of.Measure)
+ozone$Units.of.Measure <- NULL
+```
+
+Approach for all features (Takes time!)
+```{r}
+purrr::map(names(ozone), ~ table(ozone[.]))
+```
+
+
+Statistics
+========================================================
+class: small-code
+The psych package provides a convenient function to summarize standard statistics for numerical features.
+```{r}
+library(psych)
+describe(ozone[, sapply(ozone, is.numeric)])
+```
+
+
+External Validation
+========================================================
+class: small-code
+The US have 50 states. In our data, there are two more.
+
+- External data lets us double check facts hidden in the dataset.
+- One should always at least compare the data with one external datasource.
+
+```{r}
+library(dplyr)
+ozone %>% select(State.Name) %>% unique %>% nrow
+```
+That's no problem because Washington D.C. and Puerto Rico are part of the US. Thus the data seems to be ok.
+
+```{r}
+unique(ozone$State.Name)
+```
+
+Make a plot
+========================================================
+class: small-code
+Plots are particularly good at letting you see deviations from what you might expect.
+Plots might also bring up new questions and hence new insights.
+
+```{r, fig.width=14, fig.height = 8}
+par(las = 2, mar = c(10, 4, 2, 2), cex.axis = 1.5)
+boxplot(Sample.Measurement ~ State.Name, ozone, range = 0)
+abline(h=mean(ozone$Sample.Measurement), col="blue")
+```
+
+Cycle back to question 1
+========================================================
+class: small-code
+Do counties in the eastern United States have higher ozone levels than counties in the western United States?
+
+```{r, fig.width=14, fig.height = 14}
+(mean_long = range(ozone$Longitude)[1] + (range(ozone$Longitude)[2] - range(ozone$Longitude)[1])/2)
+library(maps)
+map("state")
+abline(v = mean_long, lwd = 3)
+text(-120, 30, "West", cex = 1.5)
+text(-75, 30, "East", cex = 1.5)
+```
+
+So there seems to be a problem with that approach. What is the problem?
+
+Solution
+========================================================
+class: small-code
+
+Alaska, Hawaii and Puerto Rico are "offshore" territories of the US. So those countries disturb the Longitude calculation.
+
+```{r}
+inland = ozone %>% filter(!State.Name %in% c("Alaska","Hawaii", "Puerto Rico"))
+unique(inland$State.Name)
+```
+
+```{r, fig.width=14, fig.height = 14}
+(mean_long = range(inland$Longitude)[1] + (range(inland$Longitude)[2] - range(inland$Longitude)[1])/2)
+map("state")
+abline(v = mean_long, lwd = 3)
+text(-120, 30, "West", cex = 1.5)
+text(-75, 30, "East", cex = 1.5)
+```
+
+```{r}
+inland$region <- factor(ifelse(inland$Longitude <= mean_long, "west", "east"))
+```
+
+Cycle back to the question
+========================================================
+class: small-code
+
+```{r}
+inland %>% group_by(region) %>%
+    summarize(
+        mean = mean(Sample.Measurement)
+        ,median = median(Sample.Measurement)
+        ,sd = sd(Sample.Measurement)
+        ,count = n()
+        )
+```
+
+```{r, fig.width=14, fig.height = 14}
+boxplot(Sample.Measurement ~ region, data = inland, range = 0)
+```
+
+
+The Los Angeles Basin
+========================================================
+class: small-code
+My question: Is the Ozone level in Los Angeleas basin above the average of the rest of California?
+Lets say we are searching in an area between 33.49 and 34.4 in Latitude and -119.64 and -117.63 in Longitude.
+
+
+```{r}
+la_basin <- inland %>% filter(between(Latitude, 33.49, 34.4) & between(Longitude, -119.64, -117.63))
+dim(la_basin)
+rest_cal <- inland %>% filter(State.Name == "California" & !(between(Latitude, 33.49, 34.4) & between(Longitude, -119.64, -117.63)))
+```
+
+```{r}
+(mean_la <- mean(la_basin$Sample.Measurement))
+(mean_rest_cal <- mean(rest_cal$Sample.Measurement))
+```
+
+So the question is answered. My intention was wrong. Why can it be that in a city with one of the highes traffic volumen worldwide could have a lower air pollution rate than the rest of the state?
+
+One possible answer
 ========================================================
 
-```{r, echo=FALSE}
-plot(cars)
-```
+The big pacific vacuum cleaner. But this is another Data Science Story.
+
+Thank you.
+
+
+

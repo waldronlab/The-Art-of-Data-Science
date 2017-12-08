@@ -12,7 +12,7 @@ This book describes the process of analyzing data. The authors have extensive ex
 
 ## Getting Started
 
-1. Obtain a free copy of the book by visiting https://leanpub.com/artofdatascience and signing up for an account.
+1. Obtain a free copy of the book by visiting https://leanpub.com/artofdatascience and signing up for an account, or view directly at https://bookdown.org/rdpeng/artofdatascience/.
 
 2. If you don't already have them, install R and RStudio following these [instructions](https://www.ics.uci.edu/~jutts/110/InstallingRandRStudio.pdf).
 
@@ -34,15 +34,15 @@ Where: http://huntercollege.adobeconnect.com/artofdatascience/
 
 | date | chapter | presenter |
 | ---- | ------- | --------- |
-| 2017-10-04 | Data Analysis as Art |	schifferl |
-| 2017-10-11 | Epicycles of Analysis |  |
-| 2017-10-18 | Stating and Refining the Question |  |
-| 2017-10-25 | Exploratory Data Analysis |philippgrafendorfe |
-| 2017-11-08 | Using Models to Explore Your Data |  |
-| 2017-11-15 | Inference: A Primer |  |
-| 2017-11-29 | Formal Modeling |  |
+| 2017-10-04 | Data Analysis as Art | schifferl |
+| 2017-10-11 | Epicycles of Analysis | nicobuettner |
+| 2017-10-18 | Stating and Refining the Question | raph333 |
+| 2017-10-25 | Exploratory Data Analysis | philippgrafendorfe |
+| 2017-11-08 | Using Models to Explore Your Data | ITtraveller |
+| 2017-11-15 | Inference: A Primer | judithparkinson |
+| 2017-11-29 | Formal Modeling | marthuf |
 | 2017-12-06 | Inference vs. Prediction: Implications for Modeling Strategy | raph333 |
-| 2017-12-13 | Interpreting Your Results |  |
+| 2017-12-13 | Interpreting Your Results | philipp |
 | 2017-12-20 | Communication |  |
 | 2017-12-20 | Concluding Thoughts |  |
 

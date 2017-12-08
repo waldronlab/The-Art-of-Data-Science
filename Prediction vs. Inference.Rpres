@@ -15,49 +15,49 @@ Inference vs. Prediction
 Mortality
 =========================================================
 
-![alt text](mortality_over_time.png)
+![alt text](images/mortality_over_time.png)
 
 
 Particluate matter with diameter less 10μm (PM10)
 =========================================================
 
-![alt text](pollution_over_time.png)
+![alt text](images/pollution_over_time.png)
 
 
 Simple scatter plot: no correlation
 =========================================================
-  
-![alt text](scatter.png)
+
+![alt text](images/scatter.png)
 
 
 Confounding variables: example
 =========================================================
-  
-![alt text](storks.gif)
+
+![alt text](images/storks.gif)
 
 
 Simpsons's paradox
 =========================================================
-  
-![alt text](simpson.png)
+
+![alt text](images/simpson.png)
 
 
 Multiple linear regression I
 =========================================================
-  
-![alt text](mult_reg1.png)
+
+![alt text](images/mult_reg1.png)
 
 
 Multiple linear regression II
 =========================================================
-  
-![alt text](mult_reg.png)
+
+![alt text](images/mult_reg.png)
 
 
 Prediction: feature importance
 =========================================================
-  
-![alt text](var_imp.png)
+
+![alt text](images/var_imp.png)
 
 
 In summary: Be clear about your goal
@@ -66,6 +66,6 @@ In summary: Be clear about your goal
 
 Thank you for your attention!
 =========================================================
-  
+
 
 
