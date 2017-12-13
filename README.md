@@ -43,7 +43,7 @@ Where: http://huntercollege.adobeconnect.com/artofdatascience/
 | 2017-11-29 | Formal Modeling | marthuf |
 | 2017-12-06 | Inference vs. Prediction: Implications for Modeling Strategy | raph333 |
 | 2017-12-13 | Interpreting Your Results | philipp |
-| 2017-12-20 | Communication |  |
+| 2017-12-20 | Communication | Martin |
 | 2017-12-20 | Concluding Thoughts |  |
 
 ## Presenting
